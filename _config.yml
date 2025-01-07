@@ -154,6 +154,30 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
+# jekyll_compose settings
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      title: TITLE
+      date: YYYY-MM-DD HH:MM:SS -0800 # pacific time
+      author: AUTHOR_ID
+      # or
+      authors: [AUTHOR_ID1, AUTHOR_ID2]
+      description: DESCRIPTION # overrides autogen description
+      categories: [TOP_CATEGORY, SUB_CATEGORY] # max 2
+      tags: [tag1, tag2, tag3] # tags must be lowercase, 0-inf
+    posts:
+      title: TITLE
+      date: YYYY-MM-DD HH:MM:SS -0800 # pacific time
+      author: AUTHOR_ID
+      # or
+      authors: [AUTHOR_ID1, AUTHOR_ID2]
+      description: DESCRIPTION # overrides autogen description
+      categories: [TOP_CATEGORY, SUB_CATEGORY] # max 2
+      tags: [tag1, tag2, tag3] # tags must be lowercase, 0-inf
+      published: false
+      sitemap: false
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
