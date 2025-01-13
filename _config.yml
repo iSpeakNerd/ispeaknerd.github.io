@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: iSpeakNerd
-  email: # change to your email address
+  # email: # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/ispeak_nerd # change to your Twitter homepage
@@ -44,7 +44,7 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/ispeaknerd
-    - https://ispeaknerd.eth
+    - https://paragraph.xyz/@ispeaknerd.eth
 
 # Site Verification Settings
 webmaster_verifications:
