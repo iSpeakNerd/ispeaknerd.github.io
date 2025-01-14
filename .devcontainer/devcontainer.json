@@ -11,6 +11,7 @@
       "extensions": [
         // Liquid tags auto-complete
         "killalau.vscode-liquid-snippets",
+        "sissel.shopify-liquid",
         // Liquid syntax highlighting and formatting
         "Shopify.theme-check-vscode",
         // Shell
