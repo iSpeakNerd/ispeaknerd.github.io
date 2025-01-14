@@ -38,13 +38,13 @@ social:
   # email: # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/ispeak_nerd # change to your Twitter homepage
-    - https://github.com/ispeaknerd # change to your GitHub homepage
-    - https://warpcast.com/ispeaknerd # change to your Warpcast homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    - https://warpcast.com/ispeaknerd
+    - https://github.com/ispeaknerd
+    - https://twitter.com/ispeak_nerd
     - https://www.linkedin.com/in/ispeaknerd
     - https://paragraph.xyz/@ispeaknerd.eth
+    # Uncomment below to add more social links
+    # - https://www.facebook.com/username
 
 # Site Verification Settings
 webmaster_verifications:
