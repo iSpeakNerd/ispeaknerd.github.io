@@ -12,7 +12,8 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "[liquid]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid"
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": true
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
