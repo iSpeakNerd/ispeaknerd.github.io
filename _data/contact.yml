@@ -1,7 +1,7 @@
 #  The contact options.
 
 - type: farcaster
-  icon: "custom-farcaster"
+  icon: "icon-fc-arch"
   url: "https://warpcast.com/ispeaknerd"
 
 - type: github
