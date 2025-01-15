@@ -1,7 +1,0 @@
-{% assign icon_class = item.icon %} 
-{% if item.icon contains 'custom-' %} 
-{% assign icon_name = item.icon | replace: 'custom-', '' %} 
-{% include custom-icons.html name=icon_name %} 
-{% else %}
-<i class="{{ icon_class }}"></i>
-{% endif %}
