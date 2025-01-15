@@ -12,7 +12,8 @@
         // Liquid tags auto-complete
         "killalau.vscode-liquid-snippets",
         // Liquid syntax highlighting and formatting
-        "Shopify.theme-check-vscode",
+        "sissel.shopify-liquid",
+        // "Shopify.theme-check-vscode",
         // Shell
         "timonwong.shellcheck",
         "mkhl.shfmt",
