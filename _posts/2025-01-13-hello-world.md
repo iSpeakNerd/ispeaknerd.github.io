@@ -19,7 +19,7 @@ Oooh boy, it's taken a bit to get here.
 
 I realized while applying for new roles last year that I didn't have a singular online presence for my portfolio. This site is the result of me remedying that.
 
-I'm an educator by training, and techie by passion. I've taught high school math, blockchain courses, and more recently, I've been teaching myself to code TypeScript in 2024. 
+I'm an educator by training, and techie by passion. I've taught high school math, blockchain courses, and more recently, I've been building TypeScript projects in 2024.
 
 I have experience technical writing, educational content creation, and developer support in web3. I'm skilled at creating accessible documentation, engaging tutorials, and learning resources to demystify complex topics.
 
