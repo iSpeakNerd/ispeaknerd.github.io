@@ -1,7 +1,8 @@
+---
 # metadata
-last_edit: 2025-01-17 # update on commit
-last_commit:
-last_commit_url:
+last_edit: "2025-01-16"
+last_commit: 7304e4424666a8d88027a073679c6c56fa17e803
+last_commit_url: https://github.com/iSpeakNerd/ispeaknerd.github.io/commit/7304e4424666a8d88027a073679c6c56fa17e803
 
 # experience
 experience:
@@ -49,7 +50,7 @@ education:
 # skills
 skills:
   developer_education: Documentation, API Guides, Technical Demos, Tutorial Videos, User Guides
-  developer_tools: React, Next.js, Node.js, Vercel, Netlify, Algolia, Git, Supabase, Farcaster
+  developer_tools: React, Next.js, Node.js, Vercel, Netlify, Algolia, Git, Supabase, Farcaster Frames
   languages: TypeScript, JavaScript, JSX, HTML, CSS, Markdown
   community_and_content_management: GitHub, Docusaurus, Notion, Obsidian, Discord, Farcaster
 
@@ -59,7 +60,7 @@ projects:
     role: Founder
     description: Community founder of [/tabletop](https://warpcast.com/~/channel/tabletop) on Farcaster and builder of TableTop.xyz, a cross-platform app for creating, managing, and tracking board game plays and stats. Built with TypeScript in Next.js, leveraging Supabase and Privy for Farcaster login.
     link: https://tabletop.xyz
-    image: /assets/images/tabletop.jpg
+    image: "/assets/images/tabletop.jpg"
     tags: React, Next.js, Node.js, Vercel, Git, Supabase, Farcaster Frames
 
   - title: Rotki
