@@ -78,7 +78,7 @@ Technologies: {{ project.tags | join: ", " }}
 {% if jekyll.environment == "development" %}
 <div class="prompt-tip" style="text-align: center; font-size: 11px;">
   <p>
-    This resume was last updated on: [{{ site.data.resume.last_edit }}]({{ site.data.resume.last_commit_url }})
+    This resume was last updated on: <a href="{{ site.data.resume.last_commit_url }}" target="_blank" rel="noopener noreferrer">{{ site.data.resume.last_edit | date: "%Y-%m-%d" }}</a>
   </p>
 </div>
 {% endif %}
