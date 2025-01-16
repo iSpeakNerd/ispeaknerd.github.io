@@ -1,9 +1,7 @@
-# will pull from contact.yml
-contact:
-  farcaster: true
-  github: true
-  linkedin: true
-  twitter: true
+# metadata
+last_edit: 2025-01-17 # update on commit
+last_commit:
+last_commit_url:
 
 # experience
 experience:
@@ -19,7 +17,6 @@ experience:
       - Managed documentation on GitHub with version control, deploying updates on Docusaurus, and maintaining FAQs, tutorials, and troubleshooting resources to improve usability.
       - Contributed to the community knowledge base, including [tutorials](https://docs.collab.land/help-docs/command-center/create-a-tgr/how-to-create-a-tgr), [how-to video guides](https://www.youtube.com/watch?v=T3dS4LqnZlk), and troubleshooting tips.
       - Reduced support ticket volume by 36% through proactive educational resources, including a searchable FAQ and troubleshooting guide accessible through Discord.
-
 
   - title: Technical Writer (Content Director)
     company: Bankless Academy
@@ -43,39 +40,41 @@ experience:
       - Created gamified learning experiences through platforms like ClassCraft, integrating tools like Desmos for real-time interactive simulations.
       - Fostered reflective learning habits in students, blending technical content with mindfulness practices to develop metacognitive skills.
 
-
 # education
-  education:
-    undergrad:
-      degree: Bachelor's of Science in Physics
-      school: University of California, San Diego
-      year: 2012
+education:
+  - degree: Bachelor's of Science in Physics
+    school: University of California, San Diego
+    year: 2012
 
 # skills
+skills:
   developer_education: Documentation, API Guides, Technical Demos, Tutorial Videos, User Guides
-  developer_tools: React, Next.js, Node.js, Vercel, Netlify, Algolia, Git, Supabase, Farcaster Frames
+  developer_tools: React, Next.js, Node.js, Vercel, Netlify, Algolia, Git, Supabase, Farcaster
   languages: TypeScript, JavaScript, JSX, HTML, CSS, Markdown
   community_and_content_management: GitHub, Docusaurus, Notion, Obsidian, Discord, Farcaster
 
 # projects
 projects:
   - title: TableTop.xyz
+    role: Founder
     description: Community founder of [/tabletop](https://warpcast.com/~/channel/tabletop) on Farcaster and builder of TableTop.xyz, a cross-platform app for creating, managing, and tracking board game plays and stats. Built with TypeScript in Next.js, leveraging Supabase and Privy for Farcaster login.
     link: https://tabletop.xyz
     image: /assets/images/tabletop.jpg
     tags: React, Next.js, Node.js, Vercel, Git, Supabase, Farcaster Frames
 
-  foss:
-    - name: Rotki
-      description: A portfolio tracker for crypto assets.
-      link: https://rotki.com
-      tags: Python, Django, PostgreSQL, Docker, Git
+  - title: Rotki
+    role: Contributor
+    description: The portfolio manager that protects your privacy
+    link: https://rotki.com
+    image: https://raw.githubusercontent.com/rotki/rotki/develop/frontend/app/public/assets/images/rotkehlchen_no_text.png
+    tags: Python, TypeScript, Git
 
-    - name: wallet.fyi
-      description: A site for comparing crypto wallet features.
-      link: https://wallet.fyi
-      tags: JavaScript, React, Vercel, Git
-
+  - title: walletbeat
+    role: Contributor
+    description: An open repository of EVM-compatible wallets.
+    link: https://walletbeat.fyi
+    image:
+    tags: TypeScript, React, Git
 
 # publications
 publications:
@@ -84,7 +83,7 @@ publications:
     link: https://paragraph.xyz/@ispeaknerd.eth/poap-powered-pathways-to-participation
     type: Article
     publisher: 0xNerdery
-    tags:
+    tags: web3, farcaster, poap
     year: 2024
 
   - title: Unlocking Potential on Farcaster
@@ -92,7 +91,7 @@ publications:
     link: https://paragraph.xyz/@ispeaknerd.eth/unlocking-potential-on-farcaster
     type: Article
     publisher: 0xNerdery
-    tags:
+    tags: farcaster, web3
     year: 2024
 
   - title: Securely Set up a Discord Server
@@ -100,7 +99,7 @@ publications:
     link: https://boringsecurity.com/articles/securely-set-up-a-discord-server
     type: Article
     publisher: Boring Security
-    tags:
+    tags: discord, security
     year: 2024
 
   - title: Personal Security Foundations for Web3 and Beyond
@@ -108,7 +107,7 @@ publications:
     link: https://paragraph.xyz/@ispeaknerd.eth/personal-security-for-web3-and-beyond
     type: Article
     publisher: 0xNerdery
-    tags:
+    tags: web3, security
     year: 2023
 
   - title: Getting Started with GitHub as a Non-Developer at Collab.Land
@@ -116,5 +115,5 @@ publications:
     link: https://www.youtube.com/watch?v=T3dS4LqnZlk
     type: Video
     publisher: Collab.Land
-    tags:
+    tags: tutorial video, tutorial, collab.land, web3, github
     year: 2023
