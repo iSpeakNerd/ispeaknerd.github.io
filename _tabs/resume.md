@@ -5,8 +5,10 @@ order: 5
 toc: true
 ---
 
+{% if page.url contains '/resume/' %} 
 # iSpeakNerd
 {: .resume-header }
+{% endif %}
 
 Developer Relations specialist with extensive experience in technical writing, community education, and developer support for Web3 and decentralized finance (DeFi) platforms. Skilled at creating accessible documentation, engaging tutorials, and learning resources that demystify complex technologies. Experienced with community building and fostering developer engagement through collaborative platforms such as GitHub, Notion, and Docusaurus. Proficient with tools and frameworks like Vercel, React, and Next.js, combining a background in physics and programming to effectively bridge technical and non-technical audiences.
 
