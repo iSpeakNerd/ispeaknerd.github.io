@@ -5,11 +5,10 @@ date: 2025-01-13 12:00:00 -0800
 author: ispeaknerd
 description: My first blog post
 categories:
-- blog
+
 tags:
-- blog
+
 published: true
-sitemap: true
 ---
 
 # First Post
