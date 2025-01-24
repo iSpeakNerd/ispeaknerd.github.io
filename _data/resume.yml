@@ -1,0 +1,120 @@
+---
+# metadata
+last_edit: "2025-01-16"
+last_commit: 7304e4424666a8d88027a073679c6c56fa17e803
+last_commit_url: https://github.com/iSpeakNerd/ispeaknerd.github.io/commit/7304e4424666a8d88027a073679c6c56fa17e803
+
+# experience
+experience:
+  - title: Technical Writer (Community Education and Outreach)
+    company: Collab.Land (Abridged Inc.)
+    location: Remote
+    start_year: 2022
+    end_year: 2024
+    summary:
+    highlights:
+      - Led user education initiatives for the Collab.Land ecosystem, creating developer resources, high-quality documentation, and interactive guides tailored to Web3 audiences.
+      - Collaborated with cross-functional teams to document new features and provide up-to-date developer support.
+      - Managed documentation on GitHub with version control, deploying updates on Docusaurus, and maintaining FAQs, tutorials, and troubleshooting resources to improve usability.
+      - Contributed to the community knowledge base, including [tutorials](https://docs.collab.land/help-docs/command-center/create-a-tgr/how-to-create-a-tgr), [how-to video guides](https://www.youtube.com/watch?v=T3dS4LqnZlk), and troubleshooting tips.
+      - Reduced support ticket volume by 36% through proactive educational resources, including a searchable FAQ and troubleshooting guide accessible through Discord.
+
+  - title: Technical Writer (Content Director)
+    company: Bankless Academy
+    location: Remote
+    start_year: 2022
+    end_year: 2022
+    summary:
+    highlights:
+      - Directed the content strategy for Bankless Academy, an educational platform focused on DeFi and blockchain fundamentals.
+      - Partnered with subject matter experts, designers, and community contributors to produce high-quality, developer-friendly educational content.
+      - Developed consistent content guidelines to support cohesive messaging across interactive modules, blog posts, and tutorials.
+
+  - title: Mathematics Teacher
+    company: San Diego Unified School District
+    location: San Diego, CA
+    start_year: 2016
+    end_year: 2022
+    summary:
+    highlights:
+      - Translated complex mathematical concepts into digestible content, using technical skills and teaching expertise to support diverse learning needs.
+      - Created gamified learning experiences through platforms like ClassCraft, integrating tools like Desmos for real-time interactive simulations.
+      - Fostered reflective learning habits in students, blending technical content with mindfulness practices to develop metacognitive skills.
+
+# education
+education:
+  - degree: Bachelor's of Science in Physics
+    school: University of California, San Diego
+    year: 2012
+
+# skills
+skills:
+  developer_education: Documentation, API Guides, Technical Demos, Tutorial Videos, User Guides
+  developer_tools: React, Next.js, Node.js, Vercel, Netlify, Algolia, Git, Supabase, Farcaster Frames
+  languages: TypeScript, JavaScript, JSX, HTML, CSS, Markdown
+  community_and_content_management: GitHub, Docusaurus, Notion, Obsidian, Discord, Farcaster
+
+# projects
+projects:
+  - title: TableTop.xyz
+    role: Founder
+    description: Community founder of [/tabletop](https://warpcast.com/~/channel/tabletop) on Farcaster and builder of TableTop.xyz, a cross-platform app for creating, managing, and tracking board game plays and stats. Built with TypeScript in Next.js, leveraging Supabase and Privy for Farcaster login.
+    link: https://tabletop.xyz
+    image: "/assets/images/tabletop.jpg"
+    tags: React, Next.js, Node.js, Vercel, Git, Supabase, Farcaster Frames
+
+  - title: Rotki
+    role: Contributor
+    description: The portfolio manager that protects your privacy
+    link: https://rotki.com
+    image: https://raw.githubusercontent.com/rotki/rotki/develop/frontend/app/public/assets/images/rotkehlchen_no_text.png
+    tags: Python, TypeScript, Git
+
+  - title: walletbeat
+    role: Contributor
+    description: An open repository of EVM-compatible wallets.
+    link: https://walletbeat.fyi
+    image:
+    tags: TypeScript, React, Git
+
+# publications
+publications:
+  - title: POAP Powered Pathways to Participation
+    description:
+    link: https://paragraph.xyz/@ispeaknerd.eth/poap-powered-pathways-to-participation
+    type: Article
+    publisher: 0xNerdery
+    tags: web3, farcaster, poap
+    year: 2024
+
+  - title: Unlocking Potential on Farcaster
+    description:
+    link: https://paragraph.xyz/@ispeaknerd.eth/unlocking-potential-on-farcaster
+    type: Article
+    publisher: 0xNerdery
+    tags: farcaster, web3
+    year: 2024
+
+  - title: Securely Set up a Discord Server
+    description:
+    link: https://boringsecurity.com/articles/securely-set-up-a-discord-server
+    type: Article
+    publisher: Boring Security
+    tags: discord, security
+    year: 2024
+
+  - title: Personal Security Foundations for Web3 and Beyond
+    description:
+    link: https://paragraph.xyz/@ispeaknerd.eth/personal-security-for-web3-and-beyond
+    type: Article
+    publisher: 0xNerdery
+    tags: web3, security
+    year: 2023
+
+  - title: Getting Started with GitHub as a Non-Developer at Collab.Land
+    description:
+    link: https://www.youtube.com/watch?v=T3dS4LqnZlk
+    type: Video
+    publisher: Collab.Land
+    tags: tutorial video, tutorial, collab.land, web3, github
+    year: 2023
