@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding Custom Social Links and Icons to My Jekyll Site
-date: 2025-01-15 10:00:00 -0800
+date: 2025-01-24 10:00:00 -0800
 author: ispeaknerd
 authors:
 - ispeaknerd
@@ -15,7 +15,6 @@ tags:
 - chirpy
 - jekyll-theme
 published: true
-sitemap: false
 ---
 
 # Adding Custom Social Links and Icons to My Jekyll Site
@@ -23,6 +22,10 @@ sitemap: false
 ## The Problem
 
 I wanted to add custom social links and icons to my Chirpy-themed Jekyll site because my deepest social presence is [on Farcaster](https://warpcast.com/ispeaknerd) which isn't supported by Chirpy. I found a [few solutions described online](https://blog.jakelee.co.uk/adding-new-social-media-link-to-minima/), but they were for the default Jekyll theme, [Minima](https://github.com/jekyll/minima), and didn't work for the Chirpy theme I'm using. I was able to combine a few ideas and create a solution that works and is easy to implement for Chirpy.
+
+Specifically, I wanted to add the icon and link to my most active social media platform, [Farcaster](https://warpcast.com/ispeaknerd).
+
+![Farcaster icon](./assets/img/fc-arch.svg)
 
 ## The Solution
 
