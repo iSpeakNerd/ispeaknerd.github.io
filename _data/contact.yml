@@ -1,9 +1,10 @@
 #  The contact options.
 
-- type: farcaster
+- type: warpcast
   icon: "icon-fc-arch"
   url: "https://warpcast.com/ispeaknerd"
 
+## Social Links pulled from _config.yml
 - type: github
   icon: "fab fa-github"
 
@@ -12,7 +13,6 @@
 
 - type: linkedin
   icon: "fab fa-linkedin" # icons powered by <https://fontawesome.com/>
-  url: "https://www.linkedin.com/in/ispeaknerd" # Fill with your Linkedin homepage
 #
 # - type: bluesky
 #   icon: 'fa-brands fa-bluesky'
