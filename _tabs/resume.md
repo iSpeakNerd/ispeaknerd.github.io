@@ -15,6 +15,7 @@ Developer Relations specialist with extensive experience in technical writing, c
 {% comment %}
 loop through social links from _config.yml and match icons to display from _data/contact.yml
 {% endcomment %}
+
 <div class="resume-contact-links">
 {% for social_url in site.social.links %}
   {% for contact_data in site.data.contact %}
@@ -32,10 +33,13 @@ loop through social links from _config.yml and match icons to display from _data
 ## Skills
 {: #skills }
 
-- **Developer Education**: {{ site.data.resume.skills.developer_education }}
-- **Developer Tools**: {{ site.data.resume.skills.developer_tools }}
-- **Languages**: {{ site.data.resume.skills.languages }}
-- **Community & Content Management**: {{ site.data.resume.skills.community_and_content_management }}
+{%comment%}
+render skills as tag links if tags exist
+{% endcomment%}
+- **Developer Education**: {% include tag_links.html content=site.data.resume.skills.developer_education %}
+- **Developer Tools**: {% include tag_links.html content=site.data.resume.skills.developer_tools %}
+- **Languages**: {% include tag_links.html content=site.data.resume.skills.languages %}
+- **Community & Content Management**: {% include tag_links.html content=site.data.resume.skills.community_and_content_management %}
 
 ## Experience
 {: #experience }
@@ -43,7 +47,7 @@ loop through social links from _config.yml and match icons to display from _data
 {% for job in site.data.resume.experience %}
 ### {{ job.title }}
 {: #{{ job.title | slugify }} }
-**{{ job.company }}** _{% if job.start_year != job.end_year %}({{ job.start_year }} - {{ job.end_year }}){% else %}({{ job.start_year }}){% endif %}_
+**{{ job.company }}** {% if job.start_year != job.end_year %}({{ job.start_year }} - {{ job.end_year }}){% else %}({{ job.start_year }}){% endif %}
 
 {% for highlight in job.highlights %}
 - {{ highlight }}
@@ -73,7 +77,7 @@ Technologies: {{ project.tags | join: ", " }}
 {% for education in site.data.resume.education %}
 ### {{ education.degree }}
 {: #{{ education.degree | slugify }} }
-**{{ education.school }}** _({{ education.year }})_
+**{{ education.school }}** ({{ education.year }})
 
 {% endfor %}
 
