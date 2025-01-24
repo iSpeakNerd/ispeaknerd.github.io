@@ -1,18 +1,19 @@
 #  The contact options.
-
+#
 - type: warpcast
   icon: "icon-fc-arch"
   url: "https://warpcast.com/ispeaknerd"
-
+#
 ## Social Links pulled from _config.yml
 - type: github
   icon: "fab fa-github"
-
+#
 - type: twitter
   icon: "fa-brands fa-x-twitter"
-
+#
 - type: linkedin
-  icon: "fab fa-linkedin" # icons powered by <https://fontawesome.com/>
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/ispeaknerd"
 #
 # - type: bluesky
 #   icon: 'fa-brands fa-bluesky'
