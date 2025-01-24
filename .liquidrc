@@ -1,0 +1,49 @@
+{
+  "engine": "jekyll",
+  "files": {
+    "settings": "",
+    "locales": "",
+    "sections": [],
+    "snippets": []
+  },
+  "format": {
+    "ignore": [],
+    "wrap": 80,
+    "indentSize": 2,
+    "preserveLine": 1,
+    "endNewline": true,
+    "liquid": {
+      "indentAttribute": true,
+      "lineBreakSeparator": "before",
+      "normalizeSpacing": true,
+      "quoteConvert": "single",
+      "ignoreTagList": [],
+      "commentNewline": true
+    },
+    "markup": {
+      "quoteConvert": "double",
+      "selfCloseSpace": true,
+      "delimiterTerminus": "force",
+      "stripAttributeLines": false,
+      "commentNewline": true,
+      "forceIndent": true,
+      "commentIndent": true,
+      "ignoreJS": true,
+      "ignoreCSS": false,
+      "ignoreJSON": false,
+      "forceAttribute": 2
+    },
+    "json": {
+      "bracePadding": true,
+      "braceAllman": true,
+      "arrayFormat": "indent",
+      "objectIndent": "indent",
+      "objectSort": false
+    },
+    "style": {
+      "noLeadZero": true,
+      "quoteConvert": "single",
+      "atRuleSpace": true
+    }
+  }
+}
