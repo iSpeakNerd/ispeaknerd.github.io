@@ -17,16 +17,13 @@ loop through social links from _config.yml and match icons to display from _data
 {% endcomment %}
 
 <div class="resume-contact-links">
-{% for social_url in site.social.links %}
-  {% for contact_data in site.data.contact %}
-    {% if contact_data.url != nil or contact_data.type != 'rss' and contact_data.type != 'email' %}
-      {% if social_url contains contact_data.type %}
-        <a href="{{ social_url }}" {% unless contact_data.noblank %}target="_blank" rel="noopener noreferrer"{% endunless %}>
-          <i class="{{ contact_data.icon }}"></i>
-        </a>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
+{% for contact in site.data.contact %}
+  {% assign social_url = site.social.links | where_exp: "url", "url contains contact.type" | first %}
+  {% if social_url %}
+    <a href="{{ social_url }}" {% unless contact.noblank %}target="_blank" rel="noopener noreferrer"{% endunless %}>
+      <i class="{{ contact.icon }}"></i>
+    </a>
+  {% endif %}
 {% endfor %}
 </div>
 
