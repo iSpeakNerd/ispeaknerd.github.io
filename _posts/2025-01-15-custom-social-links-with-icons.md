@@ -64,7 +64,7 @@ The final file should look like this:
 ---
 
 @use 'main {% raw %}
-{%- if jekyll.environment == ' production ' -%}
+{%- if jekyll.environment == 'production' -%}
   .bundle
 {%- endif -%} {% endraw %}
 ';
