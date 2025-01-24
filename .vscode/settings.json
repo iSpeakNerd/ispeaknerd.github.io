@@ -2,16 +2,21 @@
   // Prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  // Shopify Liquid
+  // Liquid file associations
   "files.associations": {
-    "*.html": "liquid"
+    "*.html": "liquid",
+    "*.liquid": "liquid"
   },
+  // Format settings for different file types
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  // Formatter
-  "[html][liquid]": {
-    "editor.defaultFormatter": "Shopify.theme-check-vscode"
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[shellscript]": {
     "editor.defaultFormatter": "mkhl.shfmt"
@@ -20,7 +25,7 @@
   "css.validate": false,
   "scss.validate": false,
   "less.validate": false,
-  // Stylint extension settings
+  // Stylelint extension settings
   "stylelint.snippet": ["css", "scss"],
   "stylelint.validate": ["css", "scss"],
   // Run tasks in macOS
