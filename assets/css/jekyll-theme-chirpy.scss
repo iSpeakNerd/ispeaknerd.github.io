@@ -1,6 +1,7 @@
 ---
 ---
 
+/* prettier-ignore */
 @use 'main
 {%- if jekyll.environment == 'production' -%}
   .bundle
@@ -17,57 +18,79 @@
   display: flex;
   flex-direction: column;
   text-align: top;
-}
-.resume-section h2 {
-  font-size: 4rem;
-}
-.resume-section h3 {
-  font-size: 2rem;
-}
 
-.resume-section p {
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
-.resume-section.final-section {
-  min-height: 0px;
-}
+  h2 {
+    font-size: 4rem;
 
-.resume-section ul li {
-  font-size: 1.5rem;
-  line-height: 1.5;
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  #resume-summary {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .final-section {
+    min-height: 0px;
+  }
+  ul li {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  #skills li {
+    line-height: 3rem;
+  }
 }
 
 .resume-tag {
   margin-right: 0rem;
 }
 
-hr.section-divider {
-  margin: 2rem 0;
-  border: 0;
-  border-top: 6px solid rgba(0, 0, 0, 0.1);
+hr {
+  .section-divider {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 6px solid rgba(0, 0, 0, 0.1);
+  }
+  .resume-section-divider {
+    margin: 1rem 0;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+  }
 }
 
-hr.resume-section-divider {
-  margin: 1rem 0;
-  border: 0;
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
-}
+.resume-contact-links {
+  .list-inline {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 1rem;
 
-.resume-contact-links ul li:not(:last-child) {
-  padding-right: 1rem;
-}
+    .list-inline-item {
+      display: inline-block;
+      margin-right: 3rem;
 
-.resume-contact-icon {
-  font-size: 3rem;
-}
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 
-.resume-contact-icon:hover {
-  cursor: pointer;
-}
+  .resume-contact-icon {
+    font-size: 3rem;
+    transition: color 0.2s ease;
 
-.resume-section #skills li {
-  line-height: 3rem;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
 }
 
 /* custom social icons */
