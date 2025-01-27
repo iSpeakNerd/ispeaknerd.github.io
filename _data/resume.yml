@@ -61,21 +61,21 @@ projects:
     description: Community founder of [/tabletop](https://warpcast.com/~/channel/tabletop) on Farcaster and builder of TableTop.xyz, a cross-platform app for creating, managing, and tracking board game plays and stats. Built with TypeScript in Next.js, leveraging Supabase and Privy for Farcaster login.
     link: https://tabletop.xyz
     image: "/assets/images/tabletop.jpg"
-    tags: React, Next.js, Node.js, Vercel, Git, Supabase, Farcaster Frames
+    tags: React, Nextjs, Nodejs, Vercel, Git, Supabase, Farcaster Frames, RegEx, GitHub
 
   - title: Rotki
     role: Contributor
     description: The portfolio manager that protects your privacy
     link: https://rotki.com
     image: https://raw.githubusercontent.com/rotki/rotki/develop/frontend/app/public/assets/images/rotkehlchen_no_text.png
-    tags: Python, TypeScript, Git
+    tags: Python, Git, RegEx, GitHub
 
   - title: walletbeat
     role: Contributor
     description: An open repository of EVM-compatible wallets.
     link: https://walletbeat.fyi
     image:
-    tags: TypeScript, React, Git
+    tags: TypeScript, React, Git, GitHub
 
 # publications
 publications:
