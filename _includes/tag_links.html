@@ -1,0 +1,2 @@
+{% assign items = include.content | split: ", " %}
+{% for item in items %}{% assign tag_slug = item | downcase | replace: " ", "-" %}{% if site.tags[tag_slug] %}    <a href="/tags/{{ tag_slug }}">{{ item }}</a>{% else %}{{ item }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
