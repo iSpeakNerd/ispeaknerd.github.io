@@ -1,0 +1,16 @@
+# plural->singular mappings for tags
+frameworks: framework
+languages: language
+tools: tool
+platforms: platform
+services: service
+databases: database
+protocols: protocol
+apis: api
+systems: system
+technologies: technology
+api guides: api guide
+technical demos: technical demo
+user guides: user guide
+tutorials: tutorial
+tutorial videos: tutorial video
