@@ -9,68 +9,6 @@
 
 /* append your custom style below */
 
-/* Resume */
-.resume-section {
-  min-height: 720px;
-  margin-top: auto;
-  margin-bottom: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: top;
-}
-.resume-section h2 {
-  font-size: 4rem;
-}
-.resume-section h3 {
-  font-size: 2rem;
-}
-
-.resume-section p {
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
-.resume-section.final-section {
-  min-height: 0px;
-}
-
-.resume-section ul li {
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
-
-.resume-tag {
-  margin-right: 0rem;
-}
-
-hr.section-divider {
-  margin: 2rem 0;
-  border: 0;
-  border-top: 6px solid rgba(0, 0, 0, 0.1);
-}
-
-hr.resume-section-divider {
-  margin: 1rem 0;
-  border: 0;
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
-}
-
-.resume-contact-links ul li:not(:last-child) {
-  padding-right: 1rem;
-}
-
-.resume-contact-icon {
-  font-size: 3rem;
-}
-
-.resume-contact-icon:hover {
-  cursor: pointer;
-}
-
-.resume-section #skills li {
-  line-height: 3rem;
-}
-
-/* custom social icons */
 @font-face {
   font-family: 'icomoon';
   src: url('/assets/fonts/icomoon.eot?weotyf');
