@@ -10,7 +10,7 @@ toc: true
 # iSpeakNerd
 {% endif %}
 
-Developer Relations specialist with extensive experience in technical writing, community education, and developer support for Web3 and decentralized finance (DeFi) platforms. Skilled at creating accessible documentation, engaging tutorials, and learning resources that demystify complex technologies. Experienced with community building and fostering developer engagement through collaborative platforms such as GitHub, Notion, and Docusaurus. Proficient with tools and frameworks like Vercel, React, and Next.js, combining a background in physics and programming to effectively bridge technical and non-technical audiences.
+<div id="resume-summary">Developer Relations specialist with extensive experience in technical writing, community education, and developer support for Web3 and decentralized finance (DeFi) platforms. Skilled at creating accessible documentation, engaging tutorials, and learning resources that demystify complex technologies. Experienced with community building and fostering developer engagement through collaborative platforms such as GitHub, Notion, and Docusaurus. Proficient with tools and frameworks like Vercel, React, and Next.js, combining a background in physics and programming to effectively bridge technical and non-technical audiences.</div>
 
 {% comment %}
 loop through social links from _config.yml and match icons to display from _data/contact.yml
@@ -18,18 +18,18 @@ loop through social links from _config.yml and match icons to display from _data
 
 
 <div class="resume-contact-links">
-<ul class="list-inline">
-{% for contact in site.data.contact %}
-  {% assign social_url = site.social.links | where_exp: "url", "url contains contact.type" | first %}
-  {% if social_url %}
-    <li class="list-inline-item">
-    <a href="{{ social_url }}" {% unless contact.noblank %}target="_blank" rel="noopener noreferrer"{% endunless %}>
-      <i class="{{ contact.icon }} resume-contact-icon"></i>
-    </a>
-    </li>
-  {% endif %}
-{% endfor %}
-</ul>
+  <ul class="list-inline">
+  {% for contact in site.data.contact %}
+    {% assign social_url = site.social.links | where_exp: "url", "url contains contact.type" | first %}
+    {% if social_url %}
+      <li class="list-inline-item">
+      <a href="{{ social_url }}" {% unless contact.noblank %}target="_blank" rel="noopener noreferrer"{% endunless %}>
+        <i class="{{ contact.icon }} resume-contact-icon"></i>
+      </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
 </div>
 
 ## Skills
@@ -80,9 +80,13 @@ render skills as tag links if tags exist
 **{{ project.description }}** - {% if project.link %} [{{ project.link }}]({{ project.link }}) {% endif %}
 
 {% if project.tags %}
-Technologies: {{ project.tags | join: ", " }}
-{% endif %}
-{% endfor %}
+Technologies: {% assign tags = project.tags | split: ", " -%}
+  {%- for item in tags -%}
+    {%- include tag_link.html item=item -%}
+    {%- unless forloop.last -%}, {% endunless -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- endfor %}
 
 ## Education
 
