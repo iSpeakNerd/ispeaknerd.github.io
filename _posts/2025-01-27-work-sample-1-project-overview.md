@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'iSpeakNerd Work Sample 1: Project Overview'
+title: 'Work Sample 1: Project Overview'
 date: 2025-01-27 10:00:00 -0800
 author: ispeaknerd
-description: Learn how to build a Farcaster Frame that converts POAP holders into channel members using Next.js, Neynar, and Frog.fm
+description: Project Overview work sample for iSpeakNerd.
 categories:
 - work sample
 - technical overview
@@ -81,11 +81,11 @@ We structured the solution into four main stages:
 #### Flow Diagrams
 **Sequence Diagram:**
 
-![](/assets/img/work-samples/sample-1/poap-frame-sequence-diagram.png)
+![](assets/img/work-samples/sample-1/poap-frame-sequence-diagram.png)
 
 **Process Diagram:**
 
-![](/assets/img/work-samples/sample-1/poap-frame-process-diagram.png)
+![](assets/img/work-samples/sample-1/poap-frame-process-diagram.png)
 
 We decided to use a public frame to leverage attention for /tabletop on Farcaster despite it being a more involved solution than private DMs.
 ### Deployment
@@ -118,20 +118,20 @@ Check out the frame in action:
 The invite frame looks like this:
 1. Start frame entrypoint
 
-![Frame Start](/assets/img/work-samples/sample-1/frame-start.png)
+![Frame Start](assets/img/work-samples/sample-1/frame-start.png)
 
 2. Split viewers if their FID is on the allowlist or not.
 - If the viewer's FID is on the allowlist they receive the invite link.
 
-![](/assets/img/work-samples/sample-1/frame-join-now.png)
+![Frame Join Now](assets/img/work-samples/sample-1/frame-join-now.png)
 
  - If the viewer's FID is not on the allowlist they receive a link inviting them to join an alternate way.
 
-![](/assets/img/work-samples/sample-1/frame-join-channel-alt.png)
+![Frame Join Channel](assets/img/work-samples/sample-1/frame-join-channel-alt.png)
 
   - The "Ways to join" link opens to another cast:
 
-![](/assets/img/work-samples/sample-1/cast-channel-invite.png)
+![Cast Channel Invite](assets/img/work-samples/sample-1/cast-channel-invite.png)
 
 <hr class="section-divider">
 <hr class="section-divider">

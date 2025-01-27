@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iSpeakNerd Work Sample 2: Developer Documentation
+title: 'Work Sample 2: Developer Documentation'
 date: 2025-01-27 12:00:00 -0800
 author: ispeaknerd
 description: Developer Documentation work sample for iSpeakNerd.
@@ -20,7 +20,7 @@ tags:
 - typescript
 - frog
 - warpcast
-published: false
+published: true
 ---
 
 # Work Sample 2: Developer Documentation
@@ -31,7 +31,7 @@ published: false
 
 **Achievements:** Learned how to build in comments to the codebase that can be leveraged by others moving forward to build developer documentation and showcase logic flow with mermaid sequence diagrams.
 
-**Readme:** https://github.com/iSpeakNerd/poap-invites-frame/blob/main/README.md reproduced below:
+**Readme:** [https://github.com/iSpeakNerd/poap-invites-frame/blob/main/README.md](https://github.com/iSpeakNerd/poap-invites-frame/blob/main/README.md) reproduced below:
 
 <hr class="section-divider">
 
