@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'Work Sample 3: How-to Guide'
+title: 'Work Sample 3: How-to User Guide'
 date: 2025-01-27 14:00:00 -0800
 author: ispeaknerd
-description: How-to Guide work sample for iSpeakNerd.
+description: How-to User Guide work sample for iSpeakNerd.
 categories:
 - work sample
 - how to guide
@@ -12,7 +12,10 @@ tags:
 - tutorial
 - documentation
 - collab.land
-- 
+- user guide
+- markdown
+- github
+- docusaurus
 published: true
 sitemap: false
 ---
