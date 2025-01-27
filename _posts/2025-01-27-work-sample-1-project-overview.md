@@ -12,6 +12,7 @@ tags:
 - poap
 - farcaster
 - farcaster channels
+- farcaster frames
 - nextjs
 - vercel
 - github
@@ -21,6 +22,8 @@ tags:
 - typescript
 - frog
 - warpcast
+- technical demo
+- documentation
 ---
 
 # Work Sample 1: Project Overview
