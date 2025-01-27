@@ -1,13 +1,13 @@
-{% comment %}
+{%- comment -%}
   if tag exists in site.tags, renders a link to tag, plaintext if not
-{% endcomment %}
-{%- assign tag_slug = include.item
-  | downcase
-  | replace: ' ', '-' -%}
-{%- if site.tags[tag_slug] -%}
+{%- endcomment -%}
+{%- assign tag = include.item | downcase -%}
+  {%- assign tag_slug = tag | replace: ' ', '-' -%}
+  {%- assign display_text = include.display | default: include.item -%}
+{%- if site.tags[tag] -%}
   <a
     class="tag resume-tag"
-    href="/tags/{{ tag_slug }}">{{ include.item }}</a>
+    href="/tags/{{ tag_slug }}">{{ display_text }}</a>
 {%- else -%}
-  {{ include.item }}
+  {{ display_text }}
 {%- endif -%}
