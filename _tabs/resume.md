@@ -33,10 +33,26 @@ loop through social links from _config.yml and match icons to display from _data
 {%comment%}
 render skills as tag links if tags exist
 {% endcomment%}
-- **Developer Education**: {% include tag_links.html content=site.data.resume.skills.developer_education %}
-- **Developer Tools**: {% include tag_links.html content=site.data.resume.skills.developer_tools %}
-- **Languages**: {% include tag_links.html content=site.data.resume.skills.languages %}
-- **Community & Content Management**: {% include tag_links.html content=site.data.resume.skills.community_and_content_management %}
+- **Developer Education**: {% assign deSkills = site.data.resume.skills.developer_education | split: ", " -%}
+{%- for item in deSkills -%}
+  {%- include tag_link.html item=item -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor %}
+- **Developer Tools**: {% assign dtSkills = site.data.resume.skills.developer_tools | split: ", " -%}
+{%- for item in dtSkills -%}
+  {%- include tag_link.html item=item -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor %}
+- **Languages**: {% assign lSkills = site.data.resume.skills.languages | split: ", " -%}
+{%- for item in lSkills -%}
+  {%- include tag_link.html item=item -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor %}
+- **Community & Content Management**: {% assign ccmSkills = site.data.resume.skills.community_and_content_management | split: ", " -%}
+{%- for item in ccmSkills -%}
+  {%- include tag_link.html item=item -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor %}
 
 ## Experience
 
