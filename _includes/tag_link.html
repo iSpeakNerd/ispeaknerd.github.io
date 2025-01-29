@@ -11,11 +11,9 @@
       class="tag resume-tag"
       href="/tags/{{ tag_slug }}">
       {%- include devicon.html name=tag_slug -%} {%- comment -%}insert icon if exists{%- endcomment -%}
-      {{ display_text }}</a>
-  </span>
+      {{ display_text }}</a></span>
 {%- else -%}
   <span class="resume-tag">
     {%- include devicon.html name=tag_slug -%} {%- comment -%}insert icon if exists{%- endcomment -%}
-    {{ display_text }}
-  </span>
+    {{ display_text }}</span>
 {%- endif -%}
