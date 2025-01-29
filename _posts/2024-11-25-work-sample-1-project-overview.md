@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Work Sample 1: Project Overview'
-date: 2025-01-27 10:00:00 -0800
+date: 2024-11-25 10:00:00 -0800
 author: ispeaknerd
 description: Project Overview work sample for iSpeakNerd.
 categories:

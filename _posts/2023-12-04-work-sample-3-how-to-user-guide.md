@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Work Sample 3: How-to User Guide'
-date: 2025-01-27 14:00:00 -0800
+date: 2023-12-04 14:00:00 -0800
 author: ispeaknerd
 description: How-to User Guide work sample for iSpeakNerd.
 categories:

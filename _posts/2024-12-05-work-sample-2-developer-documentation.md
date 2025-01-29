@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Work Sample 2: Developer Documentation'
-date: 2025-01-27 12:00:00 -0800
+date: 2024-12-05 12:00:00 -0800
 author: ispeaknerd
 description: Developer Documentation work sample for iSpeakNerd.
 categories:
