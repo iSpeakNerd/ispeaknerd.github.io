@@ -1,8 +1,8 @@
 ---
 # metadata
-last_edit: "2025-01-26"
-last_commit: de995a29a5ef16dee3628d0d9af1745301d4a805
-last_commit_url: https://github.com/iSpeakNerd/ispeaknerd.github.io/commit/de995a29a5ef16dee3628d0d9af1745301d4a805
+last_edit: "2025-01-27"
+last_commit: b3707c15e64f98e967579c5660a2c0702bce40f6
+last_commit_url: https://github.com/iSpeakNerd/ispeaknerd.github.io/commit/b3707c15e64f98e967579c5660a2c0702bce40f6
 
 # experience
 experience:
@@ -50,9 +50,9 @@ education:
 # skills
 skills:
   developer_education: Documentation, API Guides, Technical Demos, Tutorial Videos, User Guides
-  developer_tools: React, Next.js, Node.js, Vercel, Netlify, Algolia, Git, Supabase, Farcaster Frames
-  languages: TypeScript, JavaScript, JSX, HTML, CSS, Markdown
-  community_and_content_management: GitHub, Docusaurus, Notion, Obsidian, Discord, Farcaster
+  developer_tools: React, Nextjs, Nodejs, Vercel, Netlify, Algolia, Git, Supabase, Farcaster Frames, Prettier, ESLint, TailwindCSS
+  languages: TypeScript, JavaScript, JSX, HTML, CSS, Markdown, YAML
+  community_and_content_management: GitHub, Docusaurus, Notion, Obsidian, Discord, Farcaster, Jekyll
 
 # projects
 projects:
@@ -61,21 +61,21 @@ projects:
     description: Community founder of [/tabletop](https://warpcast.com/~/channel/tabletop) on Farcaster and builder of TableTop.xyz, a cross-platform app for creating, managing, and tracking board game plays and stats. Built with TypeScript in Next.js, leveraging Supabase and Privy for Farcaster login.
     link: https://tabletop.xyz
     image: "/assets/images/tabletop.jpg"
-    tags: React, Next.js, Node.js, Vercel, Git, Supabase, Farcaster Frames
+    tags: React, Nextjs, Nodejs, Vercel, Git, Supabase, Farcaster Frames, RegEx, GitHub
 
   - title: Rotki
     role: Contributor
     description: The portfolio manager that protects your privacy
     link: https://rotki.com
     image: https://raw.githubusercontent.com/rotki/rotki/develop/frontend/app/public/assets/images/rotkehlchen_no_text.png
-    tags: Python, TypeScript, Git
+    tags: Python, Git, RegEx, GitHub
 
   - title: walletbeat
     role: Contributor
     description: An open repository of EVM-compatible wallets.
     link: https://walletbeat.fyi
     image:
-    tags: TypeScript, React, Git
+    tags: TypeScript, React, Git, GitHub
 
 # publications
 publications:

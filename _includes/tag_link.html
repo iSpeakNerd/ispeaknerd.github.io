@@ -1,17 +1,18 @@
-{% comment %}
+{%- comment -%}
   if tag exists in site.tags, renders a link to tag, plaintext if not
   uses devicon.html to insert icon if class exists
 {% endcomment %}
-{%- assign tag_slug = include.item
-  | downcase
-  | replace: ' ', '-' -%}
+{%- assign tag = include.item | downcase -%}
+{%- assign tag_slug = tag | replace: ' ', '-' -%}
+{%- assign display_text = include.display
+  | default: include.item -%}
 {%- if site.tags[tag_slug] -%}
   <a
     class="tag resume-tag"
     href="/tags/{{ tag_slug }}">
     {%- include devicon.html name=tag_slug -%}
-    {{ include.item }}</a>
+    {{ display_text }}</a>
 {%- else -%}
   {%- include devicon.html name=tag_slug -%}
-  {{ include.item }}
+  {{ display_text }}
 {%- endif -%}
