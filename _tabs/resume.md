@@ -23,7 +23,7 @@ loop through social links from _config.yml and match icons to display from _data
     {% assign social_url = site.social.links | where_exp: "url", "url contains contact.type" | first %}
     {% if social_url %}
       <li class="list-inline-item">
-      <a href="{{ social_url }}" {% unless contact.noblank %}target="_blank" rel="noopener noreferrer"{% endunless %}>
+      <a href="{{ social_url }}" {% unless contact.noblank %}target="_blank" rel="noopener noreferrer"{% endunless %} class="no-underline">
         <i class="{{ contact.icon }} resume-contact-icon"></i>
       </a>
       </li>
