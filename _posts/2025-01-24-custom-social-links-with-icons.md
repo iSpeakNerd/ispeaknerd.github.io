@@ -14,6 +14,12 @@ tags:
 - jekyll
 - chirpy
 - jekyll theme
+- yaml
+- scss
+- css
+- svg
+- icons
+- farcaster
 published: true
 ---
 
