@@ -5,7 +5,7 @@ date: 2025-01-24 10:00:00 -0800
 author: ispeaknerd
 authors:
 - ispeaknerd
-description: How I easily added custom social links and icons to my Chirpy-themed Jekyll site
+description: How to easily add custom social links and icons to your Chirpy-themed Jekyll site.
 categories:
 - tutorial
 - jekyll
@@ -13,7 +13,13 @@ tags:
 - tutorial
 - jekyll
 - chirpy
-- jekyll-theme
+- jekyll theme
+- yaml
+- scss
+- css
+- svg
+- icons
+- farcaster
 published: true
 ---
 

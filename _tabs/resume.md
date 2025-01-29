@@ -40,28 +40,36 @@ render skills as tag links if tags exist
 - **Developer Education**: {% assign deSkills = site.data.resume.skills.developer_education | split: ", " -%}
 {%- for item in deSkills -%}
   {%- assign item_downcase = item | downcase -%}
-  {%- assign singular = site.data.plurals[item_downcase] | default: item -%}
+  {%- comment -%}singularize{%- endcomment -%}
+  {%- assign singular = site.data.plurals[item_downcase] | default: item -%} 
+  {%- comment -%}linkify tags{%- endcomment -%}
   {%- include tag_link.html item=singular display=item -%}
   {%- unless forloop.last -%}, {% endunless -%}
 {%- endfor %}
 - **Developer Tools**: {% assign dtSkills = site.data.resume.skills.developer_tools | split: ", " -%}
 {%- for item in dtSkills -%}
   {%- assign item_downcase = item | downcase -%}
-  {%- assign singular = site.data.plurals[item_downcase] | default: item -%}
+  {%- comment -%}singularize{%- endcomment -%}
+  {%- assign singular = site.data.plurals[item_downcase] | default: item -%} 
+  {%- comment -%}linkify tags{%- endcomment -%}
   {%- include tag_link.html item=singular display=item -%}
   {%- unless forloop.last -%}, {% endunless -%}
 {%- endfor %}
 - **Languages**: {% assign lSkills = site.data.resume.skills.languages | split: ", " -%}
 {%- for item in lSkills -%}
   {%- assign item_downcase = item | downcase -%}
-  {%- assign singular = site.data.plurals[item_downcase] | default: item -%}
+  {%- comment -%}singularize{%- endcomment -%}
+  {%- assign singular = site.data.plurals[item_downcase] | default: item -%} 
+  {%- comment -%}linkify tags{%- endcomment -%}
   {%- include tag_link.html item=singular display=item -%}
   {%- unless forloop.last -%}, {% endunless -%}
 {%- endfor %}
 - **Community & Content Management**: {% assign ccmSkills = site.data.resume.skills.community_and_content_management | split: ", " -%}
 {%- for item in ccmSkills -%}
   {%- assign item_downcase = item | downcase -%}
-  {%- assign singular = site.data.plurals[item_downcase] | default: item -%}
+  {%- comment -%}singularize{%- endcomment -%}
+  {%- assign singular = site.data.plurals[item_downcase] | default: item -%} 
+  {%- comment -%}linkify tags{%- endcomment -%}
   {%- include tag_link.html item=singular display=item -%}
   {%- unless forloop.last -%}, {% endunless -%}
 {%- endfor %}
