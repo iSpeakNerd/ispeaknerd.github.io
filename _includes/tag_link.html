@@ -1,5 +1,6 @@
 {% comment %}
   if tag exists in site.tags, renders a link to tag, plaintext if not
+  uses devicon.html to insert icon if class exists
 {% endcomment %}
 {%- assign tag_slug = include.item
   | downcase
@@ -7,7 +8,10 @@
 {%- if site.tags[tag_slug] -%}
   <a
     class="tag resume-tag"
-    href="/tags/{{ tag_slug }}">{{ include.item }}</a>
+    href="/tags/{{ tag_slug }}">
+    {%- include devicon.html name=tag_slug -%}
+    {{ include.item }}</a>
 {%- else -%}
+  {%- include devicon.html name=tag_slug -%}
   {{ include.item }}
 {%- endif -%}

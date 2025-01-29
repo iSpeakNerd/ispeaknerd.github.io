@@ -1,0 +1,6 @@
+{%- comment -%}
+  inserts devicon icon using class name pattern, if it exists
+  if name is not found, does nothing
+{%- endcomment -%}
+{%- capture icon_class -%}devicon-{{ include.name }}-plain{%- endcapture -%}
+<i class="{{ icon_class }}"></i>
