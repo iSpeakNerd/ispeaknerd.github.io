@@ -23,7 +23,9 @@
         "stylelint.vscode-stylelint",
         "yzhang.markdown-all-in-one",
         // Git
-        "mhutchie.git-graph"
+        "mhutchie.git-graph",
+        // GitHub pull requests
+        "github.vscode-pull-request-github"
       ]
     }
   }
