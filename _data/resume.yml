@@ -1,8 +1,8 @@
 ---
 # metadata
-last_edit: "2025-01-27"
-last_commit: 14536005512905429c9080f4a673f235928415a4
-last_commit_url: https://github.com/iSpeakNerd/ispeaknerd.github.io/commit/14536005512905429c9080f4a673f235928415a4
+last_edit: "2025-01-29"
+last_commit: 4e55285d1463b32909d674c66d6a81ba6a04fdc3
+last_commit_url: https://github.com/iSpeakNerd/ispeaknerd.github.io/commit/4e55285d1463b32909d674c66d6a81ba6a04fdc3
 
 # experience
 experience:
@@ -61,7 +61,7 @@ projects:
     description: Community founder of [/tabletop](https://warpcast.com/~/channel/tabletop) on Farcaster and builder of TableTop.xyz, a cross-platform app for creating, managing, and tracking board game plays and stats. Built with TypeScript in Next.js, leveraging Supabase and Privy for Farcaster login.
     link: https://tabletop.xyz
     image: "/assets/images/tabletop.jpg"
-    tags: React, Nextjs, Nodejs, Vercel, Git, Supabase, Farcaster Frames, RegEx, GitHub
+    tags: TypeScript, React, Nextjs, Nodejs, Vercel, Git, Supabase, Farcaster Frames, RegEx, GitHub, Privy
 
   - title: Rotki
     role: Contributor
@@ -76,6 +76,13 @@ projects:
     link: https://walletbeat.fyi
     image:
     tags: TypeScript, React, Git, GitHub
+
+  # - title: Boring Security
+  #   role: Contributor
+  #   description: The Boring Security DAO is a not-for-profit public good with a mission to educate people on what they can do to remain safe in this ever-evolving space. We provide free classes, resources, tools, and other informational material to the community so that you can prevent yourself from becoming the next victim.
+  #   link: https://boringsecurity.com
+  #   image:
+  #   tags: Discord
 
 # publications
 publications:
