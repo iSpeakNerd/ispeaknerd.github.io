@@ -9,6 +9,7 @@ categories:
 - github
 tags:
 - tutorial
+- tutorial video
 - github
 - collabland
 - documentation
