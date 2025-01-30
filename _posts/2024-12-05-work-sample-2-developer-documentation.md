@@ -97,15 +97,12 @@ yarn install
       - Deliver Invites: Use Farcaster frames or direct messages to send invites to Farcaster users.
 6. Customize Farcaster Frame
     - Customize the frame at [`app/api/[[...routes]]/route.tsx`](https://github.com/iSpeakNerd/poap-invites-frame/blob/main/app/api/%5B%5B...routes%5D%5D/route.tsx) - uses [frog.fm](https://frog.fm/concepts/images-intents) as framework for frames
-    - Run dev server
+    - Run dev server, head to `http://localhost:3000/api/dev` to inspect frame using frog.fm [devtools](https://frog.fm/concepts/devtools), customize and repeat until satisfied
 ```bash
 npm run dev
 # or
 pnpm dev
 ```
-- Head to http://localhost:3000/api/dev to inspect frame using frog.fm [devtools](https://frog.fm/concepts/devtools)
-- Customize and repeat until satisfied
-
 7. Customize the Announcement Cast in [`cast.ts`](https://github.com/iSpeakNerd/poap-invites-frame/blob/main/cast.ts)
     - replace the options properties in the [`@WarpcastUrlBuilder.composerUrl`](https://github.com/iSpeakNerd/poap-invites-frame/blob/main/lib/warpcast-urls.ts#L34) method call
         - `options.text` - the text of the cast delivering the frame invites
