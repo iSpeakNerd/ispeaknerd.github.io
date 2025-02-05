@@ -6,11 +6,11 @@ author: ispeaknerd
 description: A collection of work samples and description of my writing process.
 categories:
 - work sample
-- writing process
 tags:
 - writing process
 - content writing
 - work sample
+- technical writing
 published: true
 sitemap: true
 pin: true
@@ -34,7 +34,7 @@ My ideal writing process looks like:
 
 I hope these writing samples and the process above give you a sense of my technical writing skills. I strive to always be writing framed around solving user problems. To see more, check out [my GitHub profile](https://github.com/{{ site.github.username }}). Thank you!
 
-<div class="resume-contact-links">
+<!-- <div class="resume-contact-links">
   <ul class="list-inline">
   {% for contact in site.data.contact %}
     {% assign social_url = site.social.links | where_exp: "url", "url contains contact.type" | first %}
@@ -47,4 +47,11 @@ I hope these writing samples and the process above give you a sense of my techni
     {% endif %}
   {% endfor %}
   </ul>
-</div>
+</div> -->
+
+### Work Samples
+
+1. [Project Overview]({% post_url 2024-11-25-work-sample-1-project-overview %})
+2. [Developer Documentation]({% post_url 2024-12-05-work-sample-2-developer-documentation %})
+3. [How-To Guide]({% post_url 2023-12-04-work-sample-3-how-to-user-guide %})
+4. [User Options Flowchart]({% post_url 2023-03-23-work-sample-4-user-options-flowchart %})
