@@ -28,5 +28,9 @@
         "github.vscode-pull-request-github"
       ]
     }
+  },
+  "features": {
+    // GitHub CLI
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   }
 }
