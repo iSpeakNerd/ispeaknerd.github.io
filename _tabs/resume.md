@@ -164,7 +164,7 @@ Tags: {% assign tags = publication.tags | split: ", " -%}
 ' %}
 {% assign section_title = section_lines | first | strip %}
 <section class="resume-section" id="{{ section_title | slugify }}">
-<h2>{{ section_title }}</h2>
+<h2 id="{{ section_title | slugify }}">{{ section_title }}</h2>
 {{ section | remove_first: section_title | markdownify }}
 </section>
 <hr class="resume-section-divider">
@@ -174,6 +174,6 @@ Tags: {% assign tags = publication.tags | split: ", " -%}
 ' %}
 {% assign last_title = last_lines | first | strip %}
 <section class="resume-section final-section" id="{{ last_title | slugify }}">
-<h2>{{ last_title }}</h2>
+<h2 id="{{ last_title | slugify }}">{{ last_title }}</h2>
 {{ last | remove_first: last_title | markdownify }}
 </section>
