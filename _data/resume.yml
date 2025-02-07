@@ -1,8 +1,8 @@
 ---
 # metadata
 last_edit: "2025-01-29"
-last_commit: 4e55285d1463b32909d674c66d6a81ba6a04fdc3
-last_commit_url: https://github.com/iSpeakNerd/ispeaknerd.github.io/commit/4e55285d1463b32909d674c66d6a81ba6a04fdc3
+last_commit: 6f86212369c0a2497c17490688798b49b600b0fa
+last_commit_url: https://github.com/iSpeakNerd/ispeaknerd.github.io/commit/6f86212369c0a2497c17490688798b49b600b0fa
 
 # experience
 experience:
@@ -87,41 +87,41 @@ projects:
 # publications
 publications:
   - title: POAP Powered Pathways to Participation
-    description:
+    description: "This guide explains how we implemented a POAP-based Farcaster channel invite flow for new members, the lessons we learned, & how you can replicate the process."
     link: https://paragraph.xyz/@ispeaknerd.eth/poap-powered-pathways-to-participation
     type: Article
     publisher: 0xNerdery
-    tags: web3, farcaster, poap
+    tags: web3, Farcaster, Poap, 0xNerdery, GitHub
     year: 2024
 
   - title: Unlocking Potential on Farcaster
-    description:
+    description: "Tips and tricks for going farther and growing more as a content creator on Farcaster. Guess what? Everyone's a content creator....."
     link: https://paragraph.xyz/@ispeaknerd.eth/unlocking-potential-on-farcaster
     type: Article
     publisher: 0xNerdery
-    tags: farcaster, web3
+    tags: Farcaster, web3, 0xNerdery
     year: 2024
 
   - title: Securely Set up a Discord Server
-    description:
+    description: "Harden your Discord server security and keep your community safe with restricted permissions, moderation bots, and extra safety tools."
     link: https://boringsecurity.com/articles/securely-set-up-a-discord-server
     type: Article
     publisher: Boring Security
-    tags: discord, security
-    year: 2024
+    tags: Discord, Security, Boring Security, Tutorial
+    year: 2023
 
   - title: Personal Security Foundations for Web3 and Beyond
-    description:
+    description: "Protect your digital life in web3 with these top eight tips for security. Learn about password managers, 2FA, wallet bookmarks, wallet silos, and more. Stay safe in the decentralized world!"
     link: https://paragraph.xyz/@ispeaknerd.eth/personal-security-for-web3-and-beyond
     type: Article
     publisher: 0xNerdery
-    tags: web3, security
+    tags: Twitter, web3, Security, 0xNerdery, Password manager, 2FA
     year: 2023
 
   - title: Getting Started with GitHub as a Non-Developer at Collab.Land
-    description:
+    description: "Learn how you, a non-developer, can start contributing to the open-source Collab.Land docs repositories on GitHub using GitHub Desktop and VS Code."
     link: https://www.youtube.com/watch?v=T3dS4LqnZlk
     type: Video
     publisher: Collab.Land
-    tags: tutorial video, tutorial, collab.land, web3, github
+    tags: Tutorial video, Tutorial, CollabLand, GitHub, YouTube, Git, VScode, GitHub Desktop, new developer
     year: 2023
