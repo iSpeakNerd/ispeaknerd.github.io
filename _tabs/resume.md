@@ -90,13 +90,34 @@ render skills as tag links if tags exist
 
 {% for project in site.data.resume.projects %}
 ### {{ project.title }}
-<!-- {: #{{ project.title | slugify }} } -->
 {%comment%} _{{ project.role | default: "" }}_ {% endcomment %}
 
-**{{ project.description }}** - {% if project.link %} [{{ project.link }}]({{ project.link }}) {% endif %}
+**{{ project.description }}**
+
+{% if project.link %} [{{ project.link }}]({{ project.link }}) {% endif %}
 
 {% if project.tags %}
 Technologies: {% assign tags = project.tags | split: ", " -%}
+  {%- for item in tags -%}
+    {%- include tag_link.html item=item -%}
+    {%- unless forloop.last -%}, {% endunless -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- endfor %}
+
+## Publications
+
+{% for publication in site.data.resume.publications %}
+### {{ publication.title }}
+
+**{{ publication.description }}**
+
+{% if publication.link -%} [{{ publication.publisher }} {{ publication.type }}]({{ publication.link }}) ({{ publication.year }}) 
+  {%- else -%} {{ publication.publisher }} {{ publication.type }} ({{ publication.year }})
+{%- endif %} 
+
+{% if publication.tags %}
+Tags: {% assign tags = publication.tags | split: ", " -%}
   {%- for item in tags -%}
     {%- include tag_link.html item=item -%}
     {%- unless forloop.last -%}, {% endunless -%}
@@ -122,7 +143,7 @@ Technologies: {% assign tags = project.tags | split: ", " -%}
 
 {% endcapture %}
 
-<!-- destructure sections -->
+<!-- destructure sections, split on md h2 -->
 {% assign sections = resume_content | split: '
 ## ' %}
 {% assign first = sections | first %}
@@ -130,7 +151,7 @@ Technologies: {% assign tags = project.tags | split: ", " -%}
 {% assign last = rest | last %}
 {% assign middle = rest | pop %}
 
-<!-- rebuild with splits in document structure -->
+<!-- rebuild with section wrappers in document structure -->
 
 <section class="resume-section" id="resume-summary">
 {{ first | markdownify }}
@@ -143,7 +164,7 @@ Technologies: {% assign tags = project.tags | split: ", " -%}
 ' %}
 {% assign section_title = section_lines | first | strip %}
 <section class="resume-section" id="{{ section_title | slugify }}">
-<h2>{{ section_title }}</h2>
+<h2 id="{{ section_title | slugify }}">{{ section_title }}</h2>
 {{ section | remove_first: section_title | markdownify }}
 </section>
 <hr class="resume-section-divider">
@@ -153,6 +174,6 @@ Technologies: {% assign tags = project.tags | split: ", " -%}
 ' %}
 {% assign last_title = last_lines | first | strip %}
 <section class="resume-section final-section" id="{{ last_title | slugify }}">
-<h2>{{ last_title }}</h2>
+<h2 id="{{ last_title | slugify }}">{{ last_title }}</h2>
 {{ last | remove_first: last_title | markdownify }}
 </section>
