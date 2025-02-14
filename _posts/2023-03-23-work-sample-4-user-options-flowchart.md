@@ -24,7 +24,7 @@ published: true
 
 **Achievements:** I learned to think about inverting the engineering mindset of `method → use` and made this to focus on the user perspective of `uses → method`. 
 
-**Live version:** [https://whimsical.com/poap-distribution-methods-79PSrqjYamsUY4nUfE5XFD](https://whimsical.com/poap-distribution-methods-79PSrqjYamsUY4nUfE5XFD)
+**Live version:** [https://whimsical.com/poap-distribution-methods-79PSrqjYamsUY4nUfE5XFD@6HYTAunKLgTVnpkuieFxo2P6MmRwQtR7d8meXhx22wAfKSW](https://whimsical.com/poap-distribution-methods-79PSrqjYamsUY4nUfE5XFD@6HYTAunKLgTVnpkuieFxo2P6MmRwQtR7d8meXhx22wAfKSW)
 
 ## POAP Distribution Methods Flowchart
 
