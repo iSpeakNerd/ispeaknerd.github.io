@@ -61,9 +61,9 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: G-FTBZYTVQ03
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: ispeaknerd
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
