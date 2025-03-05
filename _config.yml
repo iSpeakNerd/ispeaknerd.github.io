@@ -63,7 +63,7 @@ analytics:
   google:
     id: G-FTBZYTVQ03
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: ispeaknerd
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
