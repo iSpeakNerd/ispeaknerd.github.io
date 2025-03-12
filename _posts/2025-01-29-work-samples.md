@@ -54,8 +54,6 @@ I hope these writing samples and the process above give you a sense of my techni
 #### 1. Project Overview
 Sample 1: [Project Overview Blog Post]({% post_url 2024-11-25-work-sample-1-project-overview %})
 
-> ##### Work Sample 1: Project Overview Blog Post
-> 
 > **Project Name:** POAP Channel Invite Tool
 > 
 > **Project Context:** I built a tool at Devcon 2024 that allows community owners on Farcaster to discover the holders of their POAPs on Farcaster and invite them to join their Farcaster channel. The blog article explains the development of the tool and provides an overview of how it works that is accessible for both technical and nontechnical audiences.

@@ -36,18 +36,20 @@ Using TableTop.xyz as a case study, we'll explore how combining these technologi
 
 Before diving in, here's a quick reference for important terms used throughout this document:
 
-- **POAP (Proof of Attendance Protocol)**: Digital collectibles that verify someone attended an event or participated in an activity
-- **Farcaster**: A decentralized social media platform
-- **Farcaster Channels**: Topic-based communities within Farcaster (similar to Discord channels or Reddit subreddits)
-- **Devcon**: The annual conference for Ethereum developers and community members
-- **Next.js**: A popular web development framework for building fast, modern websites
-- **Vercel**: A cloud platform for hosting web applications
-- **Neynar**: A developer service for building applications on Farcaster
-- **FID**: Farcaster ID - a unique identifier for each user on the Farcaster protocol
-- **Frames**: Interactive elements within Farcaster casts that users can engage with (embedded mini-applications)
+- **POAP (Proof of Attendance Protocol)**: Digital collectibles that verify someone attended an event or participated in an activity.
+- **Farcaster**: A decentralized social media platform.
+- **Farcaster Channels**: Topic-based communities within Farcaster (similar to Discord channels or Reddit subreddits).
+- **Frames**: Interactive elements within Farcaster casts that users can engage with (embedded mini-applications).
 - **Warpcast**: The most popular app for accessing Farcaster 
-- **Frog.fm**: A popular framework for building Farcaster Frames
-- **cast**: A post on Farcaster
+- **cast**: A post on Farcaster.
+- **Frog.fm**: A popular framework for building Farcaster Frames.
+- **Neynar**: A developer service for building applications on Farcaster.
+- **FID**: Farcaster ID - a unique identifier for each user on the Farcaster protocol.
+- **Devcon**: The annual conference for Ethereum developers and community members.
+- **Next.js**: A popular web development framework for building fast, modern websites.
+- **Vercel**: A cloud platform for hosting web applications.
+- **allowlist**: A list of approved users (in this case, POAP holders eligible for invites).
+- **wallet address**: An account on the Ethereum blockchain that holds tokens.
 
 ## POAP Powered Pathways to Participation
 
@@ -60,19 +62,19 @@ Before diving in, here's a quick reference for important terms used throughout t
 During events like Devcon, we distribute POAPs to attendees who verifiably play board games. However, we faced challenges in ensuring these participants could join the Tabletop channel:
 - Many attendees hadn't signed into the event platform (lu.ma).
 - POAP holders lacked a direct invite flow to access the Farcaster channel.
-- We had little way of associating the wallets with POAPs to users' social identities on Farcaster.
+- We had little way of associating the wallet addresses with POAPs to users' social identities on Farcaster.
 
 #### Solution
 
 We built a custom flow that transforms POAP claims into Farcaster channel invites. This flow:
 1. Retrieves wallet addresses that claimed the POAP via [poap.tech](https://poap.tech).
-2. Matches these wallets to Farcaster FIDs using Neynar APIs.
+2. Matches these wallet addresses to Farcaster FIDs using Neynar APIs.
 3. Creates an FID allowlist for invites.
 4. Delivers channel invites through a custom Farcaster frame.
 
 #### Technical Components
 
-1. [Poap.tech API](https://poap.tech): Handles POAP wallet lookups.
+1. [Poap.tech API](https://poap.tech): Handles POAP wallet address lookups.
 2. [Neynar SDK/API](https://neynar.com): Resolves wallet addresses to Farcaster FIDs.
 3. [Frog.fm](https://frog.fm): Delivers interactive invites or redirects users via Farcaster frame.
 4. [Next.js](https://nextjs.org): API service that handles frame interactions on Warpcast to deliver invites to users.
@@ -85,9 +87,9 @@ We structured the solution into four main stages:
 1. POAP Lookup
   - Query the poap.tech API: `GET /event/{id}/poaps`.
   - Collect wallet addresses holding the specified POAP.
-2. Convert Wallets to Farcaster FIDs
+2. Convert wallet addresses to Farcaster FIDs.
   - Use the Neynar SDK/API: `GET /v2/farcaster/user/bulk-by-address`.
-  - Match wallets to their Farcaster user profiles.
+  - Match wallet addresses to their Farcaster user profiles.
 3. Generate the Invite Allowlist
   - Compile eligible Farcaster IDs for channel invites.
   - Use the allowlist to enable interactive invite flows via Farcaster frames (Frog.fm).
