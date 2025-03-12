@@ -28,18 +28,7 @@ published: true
 pin: true
 ---
 
-# Work Sample 2: Developer Documentation
-
-**Project:** Poap Invites Tool - API 
-
-**Context:** I built a tool at Devcon 2024 that allows community owners on Farcaster to discover the holders of their POAPs on Farcaster and invite them to join their Farcaster channel. I wrote the Readme document for the project repository that describes in technical detail how other developers can use it to give access to their own Farcaster communities from POAPs.
-
-**Achievements:** Learned how to build in comments to the codebase that can be leveraged by others moving forward to build developer documentation and showcase logic flow with mermaid sequence diagrams.
-
-**Readme:** [https://github.com/iSpeakNerd/poap-invites-frame/blob/main/README.md](https://github.com/iSpeakNerd/poap-invites-frame/blob/main/README.md) reproduced below:
-
-<hr class="section-divider">
-
+<!-- TODO add audience + intro -->
 ## POAP Invites Frame
 
 Create an invite frame to add users to a channel on Farcaster from a POAP event.

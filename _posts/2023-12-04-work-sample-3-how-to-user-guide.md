@@ -20,18 +20,7 @@ published: true
 sitemap: false
 ---
 
-# Work Sample 3: How-to Guide
-
-**Project:** Create Token Gating Rules with Collab.Land
-
-**Context:** The defining feature of Collab.Land is the ability to create gating rules that communities can use to define boundaries on their content and spaces based on web3 token holdings, both fungibles and nonfungible. We found the UX to be confusing and cognitively demanding for users. Users had to make several decisions regarding gating configuration without knowing factors to consider, where to obtain required configuration settings, and potential gating implications. This documentation uses mdx within the Docusaurus framework.
-
-**Achievements:** I created a number of documents walking users through the creation of token gating rules for individual token standards as well as guidance for which type of token gate was appropriate based on their requirements.
-
-**PR:** [https://github.com/abridged/collabland-dev/pull/200](https://github.com/abridged/collabland-dev/pull/200)
-
-<hr class="section-divider">
-
+<!-- TODO: add audience + intro (as standalone doc) -->
 ## ERC721 Collections
 
 Use the `ERC721` token type for NFT collections using the ERC-721 standard across all of Collab.Land's supported EVM chains and the equivalent NFT standards for other blockchains.

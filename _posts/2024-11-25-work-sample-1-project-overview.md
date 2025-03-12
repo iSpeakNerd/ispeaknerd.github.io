@@ -25,20 +25,7 @@ tags:
 - technical demo
 - documentation
 ---
-
-# Work Sample 1: Project Overview
-
-**Project Name:** POAP Channel Invite Tool
-
-**Project Context:** I built a tool at Devcon 2024 that allows community owners on Farcaster to discover the holders of their POAPs on Farcaster and invite them to join their Farcaster channel. The blog article explains the development of the tool and provides an overview of how it works that is accessible for both technical and nontechnical audiences.
-
-**Project URL:** [POAP Invites Frame](https://github.com/iSpeakNerd/poap-invites-frame)
-
-**Article URL:** [POAP-Powered Pathways to Participation](https://paragraph.xyz/@ispeaknerd.eth/poap-powered-pathways-to-participation)
-reproduced below:
-
-<hr class="section-divider">
-
+<!-- TODO  add audience + intro -->
 ## POAP Powered Pathways to Participation
 
 [TableTop.xyz](https://tabletop.xyz), a Next.js app hosted on Vercel, gives out POAPs (Proof of Attendance Protocol) as engagement tools for onboarding board gamers onchain and to streamline user engagement in the [/tabletop](https://warpcast.com/~/channel/tabletop) Farcaster channel. This guide explains how we implemented a POAP-based channel invite flow for new members, the lessons we learned, and how you can replicate the process.
