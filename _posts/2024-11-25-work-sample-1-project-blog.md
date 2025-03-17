@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'Work Sample 1: Project Overview'
+title: 'Work Sample 1: Project Blog'
 date: 2024-11-25 10:00:00 -0800
 author: ispeaknerd
-description: "How to Build Automated Community Invites Using Digital Collectibles and Social Protocols"
+description: "Building Automated Community Invites Using Digital Collectibles and Social Protocols"
 categories:
 - work sample
 - technical overview
@@ -32,7 +32,7 @@ The document outlines how we leveraged digital collectibles (POAPs) to create an
 
 Using TableTop.xyz as a case study, we'll explore how combining these technologies created a streamlined process for identifying and inviting qualified community members to relevant discussion channels. The solution demonstrates how blockchain technology can solve practical community management challenges while improving user engagement.
 
-## Key Terms and Technologies
+### Key Terms and Technologies
 
 Before diving in, here's a quick reference for important terms used throughout this document:
 
@@ -51,11 +51,9 @@ Before diving in, here's a quick reference for important terms used throughout t
 - **allowlist**: A list of approved users (in this case, POAP holders eligible for invites).
 - **wallet address**: An account on the Ethereum blockchain that holds tokens.
 
-## POAP Powered Pathways to Participation
+### Overview
 
 [TableTop.xyz](https://tabletop.xyz), a Next.js app hosted on Vercel, gives out POAPs (Proof of Attendance Protocol) as engagement tools for onboarding board game players to blockchain and to streamline user engagement in the [/tabletop](https://warpcast.com/~/channel/tabletop) Farcaster channel. This guide explains how we implemented a POAP-based channel invite flow for new members, the lessons we learned, and how you can replicate the process.
-
-### Overview
 
 #### Problem Statement
 

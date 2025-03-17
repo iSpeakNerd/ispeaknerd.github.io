@@ -19,7 +19,7 @@ pin: true
 # iSpeakNerd Work Samples
 
 Hello! Thank you for taking the time to review my writing samples.
-My writing samples include an [overview document]({% post_url 2024-11-25-work-sample-1-project-overview %}), [developer documentation for an API tool]({% post_url 2024-12-05-work-sample-2-developer-documentation %}), a [how-to guide]({% post_url 2023-12-04-work-sample-3-how-to-user-guide %}), and a [user options flowchart]({% post_url 2023-03-23-work-sample-4-user-options-flowchart %}).
+My writing samples include an [overview document]({% post_url 2024-11-25-work-sample-1-project-blog %}), [developer documentation for an API tool]({% post_url 2024-12-05-work-sample-2-developer-documentation %}), a [how-to guide]({% post_url 2023-12-04-work-sample-3-how-to-user-guide %}), and a [user options flowchart]({% post_url 2023-03-23-work-sample-4-user-options-flowchart %}).
 My ideal writing process looks like:
 
 1. Define - Study the engineering PRs in order to test new features as the first user of the product and learn through doing. I document my steps, the code I run, and the issues I encounter. Design code samples to highlight in documentation.
@@ -52,7 +52,7 @@ I hope these writing samples and the process above give you a sense of my techni
 ### Work Samples
 <!-- TODO: add explicit audience for each -->
 #### 1. Project Overview
-Sample 1: [Project Overview Blog Post]({% post_url 2024-11-25-work-sample-1-project-overview %})
+Sample 1: [Project Overview Blog Post]({% post_url 2024-11-25-work-sample-1-project-blog %})
 
 > **Project Name:** POAP Channel Invite Tool
 > 
