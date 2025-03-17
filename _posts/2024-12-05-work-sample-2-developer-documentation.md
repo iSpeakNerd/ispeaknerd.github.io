@@ -3,7 +3,7 @@ layout: post
 title: 'Work Sample 2: Developer Documentation'
 date: 2024-12-05 12:00:00 -0800
 author: ispeaknerd
-description: Developer Documentation work sample for iSpeakNerd.
+description: "A Technical Implementation Guide for Web3 Social Integration: POAP + Farcaster"
 categories:
 - work sample
 - developer documentation
@@ -28,81 +28,67 @@ published: true
 pin: true
 ---
 
-This developer guide demonstrates how to create a Farcaster Frame that automates channel invites based on POAP event attendance. The guide is intended for:
+This developer guide demonstrates how to create a Farcaster Frame that automates Farcaster channel invites based on POAP event attendance.  For example, you could use this to invite everyone who attended your conference (and claimed a POAP) to join your community's channel on Farcaster.
 
-- Web3 developers familiar with Ethereum, TypeScript, and Next.js
-- Developers integrating with Farcaster's social protocol
-- Technical leads evaluating Farcaster Frame implementations
+### Who is This Guide For?
 
-Prerequisites:
-- Basic understanding of web development and APIs
+This documentation is designed for developers who are:
+- Experienced with modern web development (TypeScript, Next.js)
+- Familiar with Web3 concepts and Ethereum fundamentals
+- Looking to integrate decentralized social features using the Farcaster protocol
+- Building community tools that leverage blockchain-based verification
+
+### Technical Prerequisites
+
+Ensure you have:
+- Experience with API integration and environment configuration
 - Basic familiarity with Ethereum blockchain terms and functionality 
-- Familiarity with TypeScript and Next.js
-- Experience with environment configuration
-- Access to required API credentials (POAP and Neynar)
+- Working knowledge of TypeScript and the Next.js framework
+- Access to required API credentials: 
+  - POAP: for event attendance verification
+  - Neynar: for Farcaster protocol interaction
 
-The guide walks through setting up a Frame server that:
+### What You'll Build
+
+The guide walks through creating a system that:
 1. Identifies POAP holders from a specific event
 2. Maps their wallet addresses to Farcaster IDs
-3. Delivers automated channel invites through an interactive Frame
-
-## Glossary
-
-- **Farcaster**: A decentralized social media protocol.
-- **Farcaster Frames**: Interactive elements that can be embedded in Farcaster posts.
-- **Farcaster Channels**: Topic-based discussion spaces within the Farcaster network, similar to subreddits.
-- **POAP**: "Proof of Attendance Protocol" - digital badges on the Ethereum blockchain given to event attendees.
-- **Warpcast**: The primary client application for accessing Farcaster
-- **FID**: Farcaster ID - a unique identifier for Farcaster users.
-- **Frame Server**: A web server that handles Frame interactions.
-- **cast**: A post on the Farcaster network.
-- **Neynar**: An API service provider for Farcaster development.
-- **frog.fm**: A framework for building Farcaster Frames.
-- **composer URL**: A specially formatted URL that pre-fills a new cast in Warpcast.
-- **allowlist**: A list of approved users (in this case, POAP holders eligible for invites).
-- **wallet address**: The account on the Ethereum blockchain that holds POAP tokens.
-
-## POAP Invites Frame
-
-This guide shows you how to create a Farcaster frame that allows POAP holders to join a Farcaster channel. For example, you could use this to invite everyone who attended your conference (and claimed a POAP) to join your community's channel on Farcaster.
-
-The project combines three main components:
-- [frog.fm](https://frog.fm) - A framework to build the frame 
-- [next.js]() - A framework that runs the frame server and provides access to allowlisted users.
-- [poap.tech](https://poap.tech) API - To fetch the list of Ethereum wallet addresses that hold a particular POAP.
-- [Neynar SDK](https://docs.neynar.com) - To find corresponding Farcaster accounts that match the discovered Ethereum wallet addresses.
-
-This project uses [cast-intent](https://github.com/iSpeakNerd/cast-intent) as `WarpcastUrlBuilder` to create the cast with the invitation frame in the specified Farcaster channel.
+3. Delivers automated channel invites through an interactive Farcaster Frame
 
 ## Key Concepts
 
-- **Frame Flow**: When a user interacts with your frame, they'll see:
-  1. An initial screen with a "Start" button
-  2. A check if they hold the required POAP
-  3. If eligible, they receive the channel invite
+The project combines three main concepts:
+- **Wallet Resolution**: The system matches Ethereum wallet addresses (from POAP) to Farcaster accounts (via Neynar).
 
-- **Wallet Resolution**: The system matches Ethereum wallet addresses (from POAP) to Farcaster accounts (via Neynar)
+- **Farcaster Frame**: An interactive frame that allows a user to access the Farcaster Channel invite or not.
 
-- **Channel Invites**: Only POAP holders from your specified event will receive invites to join your channel
+- **Channel Invites**: The URL that grants a Farcaster user membership to a Farcaster Channel.
 
-## Using this repository
+### Technologies
+
+1. [Frog.fm](https://frog.fm) - A framework to build the frame interaction
+2. [Next.js]() - A framework that runs the frame server and provides access to allowlisted users.
+3. [Poap.tech](https://poap.tech) API - To fetch the list of Ethereum wallet addresses that hold a particular POAP.
+4. [Neynar SDK](https://docs.neynar.com) - To find corresponding Farcaster accounts that match the discovered Ethereum wallet addresses.
+
+### App Logic
 
 Follow app logic in [`main.ts`](https://github.com/iSpeakNerd/poap-invites-frame/blob/main/main.ts)
 
 ![POAP invites tool sequence diagram](https://github.com/user-attachments/assets/2a3ba47c-a345-46d2-8c42-f468255394c1)
 
-### Environment Variables
+#### Environment Variables
 
-4 env vars to add to your `.env.local` file:
+4 variables to add to your `.env.local` file:
 
 1. `POAP_EVENT_ID` - the unique identifier for your POAP you wish to find the holders of.
 2. `NEYNAR_API_KEY` - Your API key from [Neynar](https://docs.neynar.com) (used to interact with Farcaster data).
 3. `POAP_API_KEY` - Your API key from [poap.tech](https://poap.tech) (used to query POAP data).
 4. `WC_INVITE_LINK` - The invite link for your Farcaster channel (must be generated by a channel moderator in Warpcast).
 
-### How to setup your own Frame
+## How to Setup Your Frame
 
-1. Clone repository to local
+1. Clone [repository](https://github.com/iSpeakNerd/poap-invites-frame/tree/main) to local
 
 2. Install dependencies using your preferred package manager - I use `pnpm`
 
@@ -184,3 +170,19 @@ node --loader ts-node/esm file.ts
 
 > Note: Requires `"allowImportingTsExtensions": true` and `"noEmit": true` in [tsconfig.json](https://github.com/iSpeakNerd/poap-invites-frame/blob/main/tsconfig.json)
 {: .prompt-info }
+
+## Glossary
+
+- **Farcaster**: A decentralized social media protocol.
+- **Farcaster Frames**: Interactive elements that can be embedded in Farcaster posts.
+- **Farcaster Channels**: Topic-based discussion spaces within the Farcaster network, similar to subreddits.
+- **POAP**: "Proof of Attendance Protocol" - digital badges on the Ethereum blockchain given to event attendees.
+- **Warpcast**: The primary client application for accessing Farcaster
+- **FID**: Farcaster ID - a unique identifier for each user on the Farcaster protocol.
+- **Frame Server**: A web server that handles Frame interactions.
+- **cast**: A post on the Farcaster network.
+- **Neynar**: An API service provider for Farcaster development.
+- **Frog.fm**: A framework for building Farcaster Frames.
+- **composer URL**: A specially formatted URL that pre-fills a new cast in Warpcast.
+- **allowlist**: A list of approved users (in this case, POAP holders eligible for invites).
+- **wallet address**: The account on the Ethereum blockchain that holds POAP tokens.

@@ -3,7 +3,7 @@ layout: post
 title: 'Work Sample 1: Project Overview'
 date: 2024-11-25 10:00:00 -0800
 author: ispeaknerd
-description: Project Overview work sample for iSpeakNerd.
+description: "How to Build Automated Community Invites Using Digital Collectibles and Social Protocols"
 categories:
 - work sample
 - technical overview
