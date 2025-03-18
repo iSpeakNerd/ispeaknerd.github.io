@@ -3,7 +3,7 @@ layout: post
 title: 'Work Sample 3: How-to User Guide'
 date: 2023-12-04 14:00:00 -0800
 author: ispeaknerd
-description: How-to User Guide work sample for iSpeakNerd.
+description: "Token-Gating Rule Management Guide: ERC721 Collections"
 categories:
 - work sample
 - how to guide
@@ -19,7 +19,6 @@ tags:
 published: true
 sitemap: false
 ---
-# Token-Gating Rule Management Guide: ERC721 Collections
 
 This guide explains how to set up and manage Token-Gating Rules (TGRs) for NonFungible Token (NFT) collections in Discord communities using Collab.Land. Token-gating rules allow Collab.Land to assign Discord roles to members based on blockchain token ownership. The assigned Discord roles grant access to exclusive spaces and privileges for blockchain token holders. For example, a TGR may grant access to a "VIP" role for members who hold more than 4 tokens.
 
