@@ -39,7 +39,7 @@ I found a solution that combined a few other approaches and is easy to implement
 
 ### Overview
 
-Basically, we want to add icons as svgs for each custom social link so that we can use them in the social links section of the sidebar or and anywhere else. To accomplish that, just follow these steps:
+Basically, we want to add icons as svgs for each custom social link so that we can use them in the social links section of the sidebar or anywhere else. To accomplish that, just follow these steps:
 
 1. Create custom icons as a custom font using the social media logos.
 2. Add the custom font to the Chirpy theme using css.
